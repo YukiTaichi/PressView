@@ -31,6 +31,7 @@ public class PressViewActivity extends Activity implements OnClickListener ,OnTo
     public final static int REQUEST_GALLEY = 0;              //ギャラリー起動時の引数
     public final static int REQUEST_CAMERA = 10001;            //カメラ時同時の引数
 
+    //あほ
     private int targetLocalX;
     private int targetLocalY;
     private int screenX;
