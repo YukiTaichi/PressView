@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="PressViewActivity">
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        tools:context="PressViewActivity"
+        android:id="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/btn2"
+        android:text="プレビュー"
+        android:textSize="20sp"
+        android:layout_toLeftOf="@+id/btn2" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:text="ヘルプ"
+        android:id="@+id/button"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="カメラ"
+        android:id="@+id/btn2"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/btn1"
+        android:layout_toStartOf="@+id/btn1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="アップロード"
+        android:id="@+id/btn1"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/button"
+        android:layout_toStartOf="@+id/button" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/textView"
+        android:layout_above="@+id/btn3"
+        android:id="@+id/linearLayout">
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="保存"
+        android:id="@+id/btn3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignTop="@+id/linearLayout"
+        android:layout_above="@+id/btn3"
+        android:id="@+id/framelayout">
+
+    </FrameLayout>
+
+</RelativeLayout>
